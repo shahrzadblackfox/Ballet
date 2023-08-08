@@ -186,6 +186,26 @@
         font-family: var(--focus-font);
         font-size: 50px;
       }
+      .hide {
+        display: none;
+      }
+      @media (min-width: 980px) {
+        .hide {
+          display: block;
+        }
+      }
+      .section4 {
+        background-color: aliceblue;
+        color: black;
+        margin-top: 30px;
+      }
+      .section4 h3 {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        font-family: var(--focus-font);
+        font-size: 50px;
+      }
     </style>
   </head>
   <body>
@@ -220,7 +240,8 @@
                 href="#contact"
                 style="
                   background-color: red;
-                  width: 40%;
+                  width: 200px;
+                  border-radius: 15px;
                   color: white;
                   font-weight: bold;
                 "
@@ -236,7 +257,7 @@
         <h2>Ballet</h2>
       </div>
 
-      <div class="taglineone">
+      <div class="taglineone hide">
         <p>
           Unleash grace, strength,<br />
           and artistry in every step <br />
@@ -244,7 +265,7 @@
           ballet class today!
         </p>
       </div>
-      <div class="taglinetwo">
+      <div class="taglinetwo hide">
         <h3>Season 23/24</h3>
         <p>
           We are excited to present our new 2023/2024 season. A fully packed
@@ -268,28 +289,33 @@
           />
         </div>
         <div class="col">
-          <h2>
-            Enchanting <span class="ballet-m">Ballet</span> Performance:<br />
-            Join Us for an Unforgettable Evening!
-          </h2>
-          <p>
-            Whether you are an avid ballet enthusiast or someone who has never
-            experienced the magic of ballet before, we assure you that this
-            performance will leave an indelible impression on your heart. The
-            dancers' precision, elegance, and sheer dedication will transport
-            you into a world where emotions are conveyed through graceful
-            movements and storytelling without words.
-          </p>
-          <hr />
-          <h2 style="margin-top: 20px">ACCESSIBILITY AND TICKET SALES</h2>
-          <p>
-            The entrance to the theatre and the foyer surrounding Studio Boekman
-            will be renovated as part of the renovation of Studio Boekman. This
-            will have an impact on the main entrance’s accessibility.
-            <a href="#" class="new-season2"
-              >More information can be found here.</a
-            >
-          </p>
+          <div class="row">
+            <h2>
+              Enchanting <span class="ballet-m">Ballet</span> Performance:<br />
+              Join Us for an Unforgettable Evening!
+            </h2>
+            <p>
+              Whether you are an avid ballet enthusiast or someone who has never
+              experienced the magic of ballet before, we assure you that this
+              performance will leave an indelible impression on your heart. The
+              dancers' precision, elegance, and sheer dedication will transport
+              you into a world where emotions are conveyed through graceful
+              movements and storytelling without words.
+            </p>
+          </div>
+          <div class="row">
+            <hr />
+            <h2 style="margin-top: 20px">ACCESSIBILITY AND TICKET SALES</h2>
+            <p>
+              The entrance to the theatre and the foyer surrounding Studio
+              Boekman will be renovated as part of the renovation of Studio
+              Boekman. This will have an impact on the main entrance’s
+              accessibility.
+              <a href="#" class="new-season2"
+                >More information can be found here.</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -300,51 +326,60 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img
+                src="images/full-length-smiling-ballerina-practicing-ballet-studio-looking-camera.jpg"
+                class="card-img-top"
+                alt="ballerina"
+              />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Young ballerina</h5>
                 <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  The ballet show for kids is a magical experience filled with
+                  grace, beauty, and enchantment. Through captivating
+                  storytelling and mesmerizing dance moves, young audiences are
+                  transported into a world of fairy tales and imagination. The
+                  colorful costumes, elegant music, and talented dancers inspire
+                  children to dream big and embrace the art of ballet.
                 </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img
+                src="images/cute-little-ballerinas-pink-ballet-costume-children-pointe-shoes-is-dancing-room.jpg"
+                class="card-img-top"
+                alt="young ballerina"
+              />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Enjoy New Shows</h5>
                 <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  The ballet show was a mesmerizing display of grace, elegance,
+                  and precision. The dancers effortlessly glided across the
+                  stage, their movements synchronized to the enchanting music.
+                  The elaborate costumes and stunning set design added to the
+                  visual spectacle. It was a captivating performance that left
+                  the audience in awe and longing for more.
                 </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img
+                src="images/young-classical-dancer-isolated-white.jpg"
+                class="card-img-top"
+                alt="classical"
+              />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Classes</h5>
                 <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Every week an online ballet class for five weeks! Put on some
+                  comfortable clothes, turn your kitchen counter into a barre
+                  and dance along with these online ballet classes! During World
+                  Ballet Day, on Wednesday 2 November 2022, a brand new series
+                  of online ballet classes for beginner dance enthusiasts will
+                  launch.
                 </p>
               </div>
             </div>
@@ -352,6 +387,77 @@
         </div>
       </div>
     </section>
+    <section class="section4">
+      <div class="container">
+        <div class="row">
+          <h3>Why taking ballet classes</h3>
+        </div>
+        <div class="row" style="margin-top: 20px">
+          <div class="col">
+            <img src="images/getting-ready.jpg" alt="putting ballet shows" />
+          </div>
+          <div class="col">
+            <p>
+              Taking ballet offers numerous benefits for both the mind and body.
+              Firstly, ballet enhances physical fitness by improving strength,
+              flexibility, and coordination. It helps to develop long, lean
+              muscles and promotes good posture. Additionally, ballet is a great
+              cardiovascular workout that improves endurance and stamina.
+            </p>
+            <p>
+              Moreover, ballet cultivates discipline and perseverance. The
+              rigorous training requires dedication and commitment, teaching
+              individuals the importance of hard work and pushing through
+              challenges. Ballet also fosters self-expression and creativity
+              through graceful movements and storytelling. Furthermore, ballet
+              provides mental benefits such as increased focus, concentration,
+              and memory retention. It boosts self-confidence as dancers gain
+              mastery over complex techniques. Overall, taking ballet is a
+              holistic experience that not only shapes one's physique but also
+              nurtures discipline, creativity, confidence, and mental sharpness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            Ballet Class
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2023 Company, Inc</span
+          >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
     <script>
       function openNav() {
